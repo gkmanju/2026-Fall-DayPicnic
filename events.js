@@ -32,18 +32,24 @@ function showHome() {
 }
 const events = [
 {
-    title: "🍂 2026 Fall Day Picnic",
+	title: "🍂 2026 Fall: Day Picnic",
 
-    date: "September 2026",
+    date: "September 12, 2026",
 
-    location: "Folsom, California",
+    location: "Venue TBD (US-50 East or Delta Area)",
 
     description: `
-        Join Namma Folsom families for an afternoon of
-        food, games, outdoor activities and community fun.
+        Join Namma Folsom families for our inaugural
+        Fall Day Picnic featuring live outdoor cooking,
+        family activities and community bonding.
 
-        Bring your favorite picnic dishes, lawn chairs
-        and outdoor games.
+        Highlights:
+        • Live cooking
+        • Family games
+        • Kids activities
+        • Group photo
+
+        Venue announcement coming soon.
     `
 },
 {
