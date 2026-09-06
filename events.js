@@ -7,18 +7,18 @@ const events = [
         "Annual family picnic with games, food and outdoor fun."
 },
 {
-    title: "🌸 Ugadi Celebration 2027",
-    date: "March 2027",
-    location: "Folsom, California",
-    description:
-        "Kannada New Year celebration."
-},
-{
     title: "🌾 Sankranti 2027",
     date: "January 2027",
     location: "Folsom, California",
     description:
         "Sankranti gathering and lunch."
+},
+{
+    title: "🌸 Ugadi Celebration 2027",
+    date: "March 2027",
+    location: "Folsom, California",
+    description:
+        "Kannada New Year celebration."
 },
 {
     title: "🪔 Deepavali 2027",
