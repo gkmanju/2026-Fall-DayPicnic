@@ -26,7 +26,6 @@ const events = [
 ];
 
 function showEvent(event) {
-
     document.getElementById("eventContent").innerHTML = `
         <h2>${event.title}</h2>
 
@@ -35,6 +34,7 @@ function showEvent(event) {
                 <td><b>Date</b></td>
                 <td>${event.date}</td>
             </tr>
+
             <tr>
                 <td><b>Location</b></td>
                 <td>${event.location}</td>
@@ -58,6 +58,7 @@ window.onload = function () {
         li.onclick = () => showEvent(event);
 
         list.appendChild(li);
+
     });
 
     showEvent(events[0]);
