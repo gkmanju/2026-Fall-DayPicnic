@@ -18,17 +18,25 @@
 
     <div class="container">
 
-        <div class="sidebar">
-            <h3>Events</h3>
-            <ul id="eventList"></ul>
-        </div>
+<div class="sidebar">
 
-        <div class="content">
-            <div id="eventContent"></div>
-        </div>
+    <h3>Navigation</h3>
 
-    </div>
+    <ul id="navMenu">
+        <li onclick="showHome()">🏠 Home</li>
 
+        <li class="section-header">
+            📅 Upcoming Events
+        </li>
+
+        <ul id="eventList"></ul>
+
+        <li onclick="showPhotos()">📸 Photo Gallery</li>
+        <li onclick="showAbout()">ℹ️ About Us</li>
+        <li onclick="showContact()">📞 Contact</li>
+    </ul>
+
+</div>
     <script src="events.js"></script>
 
 </body>

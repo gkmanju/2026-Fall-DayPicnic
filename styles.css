@@ -63,3 +63,24 @@ td {
 h2 {
     color: #2563eb;
 }
+.section-header {
+
+    font-weight: bold;
+
+    background: transparent !important;
+
+    cursor: default !important;
+
+    margin-top: 20px;
+
+    color: #555;
+}
+
+.sidebar li {
+
+    list-style: none;
+
+    padding: 10px;
+
+    margin-bottom: 5px;
+}
