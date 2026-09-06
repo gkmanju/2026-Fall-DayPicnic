@@ -1,44 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Folsom Kannada Families</title>
-
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-    <div class="header">
-        <h1>Folsom Kannada Families</h1>
-        <p>Community • Culture • Friendship</p>
-    </div>
+<div class="header">
+    <h1>Folsom Kannada Families</h1>
+    <p>Connecting Families • Celebrating Culture • Building Community</p>
+</div>
 
-    <div class="container">
+<div class="container">
 
-<div class="sidebar">
-
-    <h3>Navigation</h3>
-
-    <ul id="navMenu">
-        <li onclick="showHome()">🏠 Home</li>
-
-        <li class="section-header">
-            📅 Upcoming Events
-        </li>
-
+    <aside class="sidebar">
+        <h3>Upcoming Events</h3>
         <ul id="eventList"></ul>
+    </aside>
 
-        <li onclick="showPhotos()">📸 Photo Gallery</li>
-        <li onclick="showAbout()">ℹ️ About Us</li>
-        <li onclick="showContact()">📞 Contact</li>
-    </ul>
+    <main class="content">
+        <div id="eventContent"></div>
+    </main>
 
 </div>
-    <script src="events.js"></script>
+
+<script src="events.js"></script>
 
 </body>
-
 </html>
