@@ -39,28 +39,27 @@ const events = [
 
 function showEvent(event) {
 
-    let rsvpButton = "";
-
-    if (event.rsvp && event.rsvp.length > 0) {
-        rsvpButton = `
-            <p>
-                ${event.rsvp}
-                    RSVP Here
-                </a>
-            </p>
-        `;
-    }
-
     let imageHtml = "";
 
-    if (event.image && event.image.length > 0) {
+    if (event.image) {
         imageHtml = `
             ${event.image}
         `;
     }
 
-    document.getElementById("eventContent").innerHTML = `
+    let rsvpButton = "";
 
+    if (event.rsvp) {
+        rsvpButton = `
+            <p>
+                ${event.rsvp}
+                   RSVP Here
+                </a>
+            </p>
+        `;
+    }
+
+    document.getElementById("eventContent").innerHTML = `
         <div class="event-card">
 
             ${imageHtml}
@@ -77,7 +76,9 @@ function showEvent(event) {
                 ${event.location}
             </p>
 
-            <p>${event.description}</p>
+            <p>
+                ${event.description}
+            </p>
 
             ${rsvpButton}
 
