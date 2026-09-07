@@ -147,3 +147,30 @@ h2 {
 .event-card li {
     margin-bottom: 8px;
 }
+.rsvp-btn {
+    display: inline-block;
+    background: #f59e0b;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.rsvp-btn:hover {
+    background: #d97706;
+}
+.rsvp-btn {
+    display: inline-block;
+    background: #f59e0b;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.rsvp-btn:hover {
+    background: #d97706;
+}
