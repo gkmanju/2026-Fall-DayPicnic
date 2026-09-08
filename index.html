@@ -1,91 +1,158 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
 
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Namma Folsom connects Kannada families in and around Folsom through cultural celebrations, family events, and community."
+    >
 
-<meta
-    name="description"
-    content="Namma Folsom connects Kannada families in the Folsom area through cultural celebrations, family events, and community building."
->
+    <title>Namma Folsom | Folsom Kannada Families</title>
 
-<title>Namma Folsom | Folsom Kannada Families</title>
-
-<link rel="stylesheet" href="styles.css">
-
-
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<header class="header">
+
+<!-- =========================
+     Top Navigation
+     ========================= -->
+
+<nav class="top-nav">
+
+    <div class="nav-inner">
+
+        <div class="nav-brand" id="homeLink">
+            <span class="nav-mark">NF</span>
+
+            <span>
+                Namma Folsom
+            </span>
+        </div>
 
 
-<div class="header-inner">
+        <div class="nav-events">
 
-    <div class="eyebrow">
-        ನಮ್ಮ ಫೋಲ್ಸಮ್
+            <span class="nav-label">
+                Events
+            </span>
+
+            <ul id="eventList"></ul>
+
+        </div>
+
     </div>
 
-    <h1>Namma Folsom</h1>
+</nav>
 
-    <p>
-        Connecting Families • Celebrating Culture • Building Community
-    </p>
 
-</div>
+<!-- =========================
+     Hero
+     ========================= -->
 
+<header class="hero">
+
+    <div class="hero-glow hero-glow-one"></div>
+    <div class="hero-glow hero-glow-two"></div>
+
+    <div class="hero-content">
+
+        <div class="kannada-title">
+            ನಮ್ಮ ಫೋಲ್ಸಮ್
+        </div>
+
+        <p class="hero-kicker">
+            Kannada Families of Folsom
+        </p>
+
+        <h1>
+            Culture feels better
+            <span>when we celebrate together.</span>
+        </h1>
+
+        <p class="hero-description">
+            Bringing Kannada families in and around Folsom
+            together through festivals, food, friendship,
+            and shared traditions.
+        </p>
+
+        <div class="hero-actions">
+
+            <a
+                href="events/fall-2026-rsvp.html"
+                class="primary-btn"
+            >
+                🍂 RSVP for Fall Picnic
+            </a>
+
+            <button
+                class="secondary-btn"
+                onclick="document.getElementById('community-content').scrollIntoView({behavior: 'smooth'})"
+            >
+                Explore Events ↓
+            </button>
+
+        </div>
+
+    </div>
 
 </header>
 
-<div class="container">
 
+<!-- =========================
+     Event Content
+     ========================= -->
 
-<aside class="sidebar">
-
-    <h3>Navigation</h3>
-
-    <ul>
-        <li id="homeLink">🏠 Home</li>
-    </ul>
-
-    <h3>Upcoming Events</h3>
-
-    <ul id="eventList"></ul>
-
-</aside>
-
-
-<main class="content">
+<main
+    class="main-content"
+    id="community-content"
+>
 
     <div id="eventContent"></div>
 
 </main>
 
 
-</div>
+<!-- =========================
+     Footer
+     ========================= -->
 
 <footer class="footer">
 
+    <div class="footer-inner">
 
-<p>
-    ನಮ್ಮ ಫೋಲ್ಸಮ್ • Namma Folsom
-</p>
+        <div>
 
-<p>
-    Celebrating Kannada culture and community in Folsom, California.
-</p>
+            <strong>
+                ನಮ್ಮ ಫೋಲ್ಸಮ್
+            </strong>
 
+            <span>
+                Namma Folsom
+            </span>
+
+        </div>
+
+        <p>
+            Celebrating Kannada culture and community
+            in Folsom, California.
+        </p>
+
+    </div>
 
 </footer>
+
 
 <script src="events.js"></script>
 
 </body>
 
 </html>
-
