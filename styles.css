@@ -243,7 +243,7 @@ a {
 
     margin: 0 auto;
 
-    padding: 80px 28px 88px;
+    padding: 76px 28px 82px;
 }
 
 
@@ -256,7 +256,7 @@ a {
 
     margin-bottom: 22px;
 
-    padding: 10px 20px 12px;
+    padding: 10px 19px 11px;
 
     border: 1px solid rgba(255, 217, 141, 0.55);
 
@@ -271,11 +271,11 @@ a {
         "Tunga",
         sans-serif;
 
-    font-size: clamp(1.65rem, 3vw, 2.4rem);
+    font-size: clamp(1.3rem, 2vw, 1.7rem);
 
-    line-height: 1.35;
+    line-height: 1.45;
 
-    font-weight: 700;
+    font-weight: 600;
 
     letter-spacing: 0;
 
@@ -283,27 +283,61 @@ a {
         inset 0 0 25px rgba(255, 211, 116, 0.05);
 }
 
+
+/* Main Kannada hero message */
+
+.hero-kannada {
+    max-width: 860px;
+
+    margin: 0;
+
+    font-family:
+        "Noto Sans Kannada",
+        "Tunga",
+        sans-serif;
+
+    font-size: clamp(2rem, 3.8vw, 3.25rem);
+
+    line-height: 1.45;
+
+    font-weight: 600;
+
+    letter-spacing: 0;
+
+    color: var(--white);
+}
+
+
+/* Existing English kicker if retained */
+
 .hero-kicker {
-    margin: 0 0 11px;
+    margin: 0 0 12px;
 
     color: var(--gold-soft);
 
-    font-size: 0.85rem;
+    font-size: 0.82rem;
 
     font-weight: 700;
 
     text-transform: uppercase;
 
-    letter-spacing: 2.2px;
+    letter-spacing: 2px;
 }
 
+
+/* English hero heading fallback */
+
 .hero h1 {
-    max-width: 720px;
+    max-width: 760px;
+
     margin: 0;
 
-    font-family: Georgia, "Times New Roman", serif;
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
 
-    font-size: clamp(2rem, 3.3vw, 3.2rem);
+    font-size: clamp(2rem, 3.2vw, 3rem);
 
     line-height: 1.12;
 
@@ -314,20 +348,46 @@ a {
 
 .hero h1 span {
     display: block;
-    margin-top: 4px;
+
+    margin-top: 5px;
+
     color: #f5c76c;
 }
 
+
+/* Kannada supporting copy */
+
 .hero-description {
+    max-width: 730px;
+
+    margin: 24px 0 0;
+
+    font-family:
+        "Noto Sans Kannada",
+        "Tunga",
+        Inter,
+        sans-serif;
+
+    font-size: 1.08rem;
+
+    line-height: 1.9;
+
+    color: rgba(255, 255, 255, 0.82);
+}
+
+
+/* Smaller English explanation beneath Kannada */
+
+.hero-english {
     max-width: 650px;
 
-    margin: 26px 0 0;
+    margin: 17px 0 0;
 
-    font-size: 1.12rem;
+    font-size: 0.95rem;
 
-    line-height: 1.7;
+    line-height: 1.65;
 
-    color: rgba(255, 255, 255, 0.78);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 
@@ -342,7 +402,7 @@ a {
 
     gap: 12px;
 
-    margin-top: 32px;
+    margin-top: 30px;
 }
 
 .primary-btn,
@@ -480,13 +540,13 @@ a {
         "Times New Roman",
         serif;
 
-    font-size: clamp(2.2rem, 4vw, 3.4rem);
+    font-size: clamp(2rem, 3.6vw, 3.1rem);
 
     font-weight: 500;
 
     color: var(--text);
 
-    letter-spacing: -1px;
+    letter-spacing: -0.8px;
 }
 
 .welcome-section p,
@@ -496,6 +556,20 @@ a {
     color: var(--muted);
 
     line-height: 1.8;
+}
+
+
+/* Kannada copy in content sections */
+
+.kannada-copy {
+    font-family:
+        "Noto Sans Kannada",
+        "Tunga",
+        sans-serif;
+
+    line-height: 1.9;
+
+    letter-spacing: 0;
 }
 
 
@@ -719,7 +793,9 @@ a {
 
     color: var(--wine);
 
-    font-family: Georgia, serif;
+    font-family:
+        Georgia,
+        serif;
 
     font-size: clamp(2rem, 4vw, 3rem);
 }
@@ -822,6 +898,11 @@ button {
 
     color: var(--wine);
 
+    font-family:
+        "Noto Sans Kannada",
+        "Tunga",
+        sans-serif;
+
     font-size: 1.15rem;
 }
 
@@ -875,28 +956,48 @@ button {
         padding: 12px 18px;
     }
 
+    .hero {
+        min-height: auto;
+    }
+
     .hero-content {
         padding:
-            65px 20px
-            70px;
+            58px 20px
+            65px;
     }
 
     .kannada-title {
-        font-size: 1.7rem;
+        font-size: 1.2rem;
 
         padding:
-            9px 16px
-            11px;
+            8px 14px
+            9px;
+
+        margin-bottom: 18px;
+    }
+
+    .hero-kannada {
+        font-size: 2rem;
+
+        line-height: 1.5;
     }
 
     .hero h1 {
-        font-size: 3rem;
+        font-size: 2.15rem;
 
-        letter-spacing: -1px;
+        line-height: 1.12;
+
+        letter-spacing: -0.5px;
     }
 
     .hero-description {
         font-size: 1rem;
+
+        line-height: 1.85;
+    }
+
+    .hero-english {
+        font-size: 0.9rem;
     }
 
     .hero-actions {
