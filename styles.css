@@ -298,26 +298,23 @@ a {
 }
 
 .hero h1 {
-    max-width: 760px;
+    max-width: 720px;
     margin: 0;
 
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
+    font-family: Georgia, "Times New Roman", serif;
 
-    font-size: clamp(2.3rem, 4.2vw, 4rem);
+    font-size: clamp(2rem, 3.3vw, 3.2rem);
 
-    line-height: 1.05;
+    line-height: 1.12;
 
     font-weight: 500;
 
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
 }
 
 .hero h1 span {
     display: block;
-    margin-top: 6px;
+    margin-top: 4px;
     color: #f5c76c;
 }
 

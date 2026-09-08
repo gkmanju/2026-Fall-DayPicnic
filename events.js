@@ -217,7 +217,7 @@ const events = [
             "📸 Community group photo"
         ],
 
-        link: "events/fall-2026-planning.html",
+        link: "events/fall-2026.html",
 
         rsvp: "events/fall-2026-rsvp.html"
     },
