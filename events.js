@@ -1,4 +1,3 @@
-javascript
 function showHome() {
 
     document.getElementById("eventContent").innerHTML = `
