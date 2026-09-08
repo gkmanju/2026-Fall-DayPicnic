@@ -298,8 +298,7 @@ a {
 }
 
 .hero h1 {
-    max-width: 800px;
-
+    max-width: 760px;
     margin: 0;
 
     font-family:
@@ -307,18 +306,18 @@ a {
         "Times New Roman",
         serif;
 
-    font-size: clamp(3rem, 6.5vw, 5.8rem);
+    font-size: clamp(2.3rem, 4.2vw, 4rem);
 
-    line-height: 0.98;
+    line-height: 1.05;
 
     font-weight: 500;
 
-    letter-spacing: -2px;
+    letter-spacing: -1px;
 }
 
 .hero h1 span {
     display: block;
-
+    margin-top: 6px;
     color: #f5c76c;
 }
 

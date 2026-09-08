@@ -76,7 +76,7 @@ function showHome() {
                     </p>
 
                     <a
-                        href="events/fall-2026-planning.html"
+                        href="events/fall-2026.html"
                         class="event-link"
                     >
                         View Event →
