@@ -1,4 +1,4 @@
-```javascript
+javascript
 function showHome() {
 
     document.getElementById("eventContent").innerHTML = `
@@ -406,5 +406,5 @@ window.onload = function () {
     showHome();
 
 };
-```
+
 
