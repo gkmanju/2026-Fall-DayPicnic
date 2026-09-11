@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kn">
 
 <head>
     <meta charset="UTF-8">
@@ -7,196 +7,658 @@
 
     <title>Fall Day Picnic 2026 | Namma Folsom</title>
 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
     <link rel="stylesheet" href="../styles.css">
+
+    <style>
+        .language-bar {
+            max-width: 900px;
+            margin: 22px auto 0;
+            padding: 0 20px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .language-toggle {
+            display: inline-flex;
+            background: #ffffff;
+            border-radius: 999px;
+            padding: 4px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        }
+
+        .language-toggle button {
+            border: 0;
+            background: transparent;
+            padding: 9px 16px;
+            border-radius: 999px;
+            cursor: pointer;
+            font: inherit;
+            font-weight: 600;
+        }
+
+        .language-toggle button.active {
+            background: #7b1e3a;
+            color: #ffffff;
+        }
+
+        .kannada-content {
+            font-family: "Noto Sans Kannada", "Tunga", sans-serif;
+            line-height: 1.9;
+        }
+
+        .language-section[hidden] {
+            display: none;
+        }
+
+        .event-quote {
+            margin: 22px 0;
+            padding: 18px 20px;
+            border-left: 4px solid #b99446;
+            background: rgba(185, 148, 70, 0.08);
+            border-radius: 8px;
+        }
+
+        .event-quote p {
+            margin: 8px 0;
+        }
+
+        .event-location-link,
+        .event-rsvp-button {
+            display: inline-block;
+            margin-top: 8px;
+        }
+
+        .event-rsvp-button {
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
 
     <header class="header">
         <h1>🍂 2026 Fall Day Picnic</h1>
-        <p>Live Cooking • Family Fun • Community Building</p>
+        <p>Namma Folsom • ನಮ್ಮ ಫೋಲ್ಸಮ್</p>
     </header>
+
+    <div class="language-bar">
+        <div class="language-toggle" aria-label="Language selection">
+            <button
+                id="kannadaButton"
+                class="active"
+                type="button"
+                onclick="showKannada()"
+            >
+                ಕನ್ನಡ
+            </button>
+
+            <button
+                id="englishButton"
+                type="button"
+                onclick="showEnglish()"
+            >
+                English
+            </button>
+        </div>
+    </div>
 
     <main class="content">
 
-        <section class="event-card">
-            <h2>🍂 Namma Folsom Fall Day Picnic 2026</h2>
+        <!-- ================================================= -->
+        <!-- KANNADA VERSION - DEFAULT -->
+        <!-- ================================================= -->
 
-            <p>
-                Join fellow Kannada families for a memorable day
-                of fresh food, outdoor activities, games, and
-                community time together.
-            </p>
+        <div
+            id="kannadaContent"
+            class="language-section kannada-content"
+        >
 
-            <p>
-                <strong>Date:</strong>
-                Saturday, September 12, 2026
-            </p>
+            <section class="event-card">
+                <h2>🍂 ನಮ್ಮ ಫೋಲ್ಸಮ್ ಶರತ್ಕಾಲದ ಸಮ್ಮಿಲನ ೨೦೨೬</h2>
 
-            <p>
-                <strong>Venue:</strong>
+                <p>
+                    ಆತ್ಮೀಯರೇ,
+                </p>
+
+                <p>
+                    ಪ್ರಕೃತಿಯ ರಸದೌತಣ ಹಾಗೂ ಸತ್ಸಂಗದ ಬೆಳಕಿನಲ್ಲಿ,
+                    ನಮ್ಮ ಫೋಲ್ಸಮ್ ಮತ್ತು ಸುತ್ತಮುತ್ತಲಿನ ಕನ್ನಡಿಗರೆಲ್ಲರೂ
+                    ಒಂದೆಡೆ ಸೇರಿ ಸೌಹಾರ್ದತೆಯಿಂದ ಕಾಲ ಕಳೆಯಲು ಈ
+                    ಸುಂದರ ಶರತ್ಕಾಲದ ದಿನದಂದು ಭೇಟಿಯಾಗೋಣ!
+                </p>
+
+                <p>
+                    ಅಮೆರಿಕನ್ ನದಿಯ ತೀರದಲ್ಲಿ ಪ್ರಕೃತಿಯ ಮಡಿಲಲ್ಲಿ ಕೂತು,
+                    ಬಿಸಿಬಿಸಿ ದೋಸೆ, ಚಹಾ ಹಾಗೂ ಹರಟೆಯೊಂದಿಗೆ ಬಂಧುತ್ವವನ್ನು
+                    ಸಂಭ್ರಮಿಸಲು ನಿಮ್ಮನ್ನು ಪ್ರೀತಿಯಿಂದ ಆಹ್ವಾನಿಸುತ್ತಿದ್ದೇವೆ.
+                </p>
+
+                <p>
+                    <strong>📅 ದಿನಾಂಕ:</strong>
+                    ಶನಿವಾರ, ಸೆಪ್ಟೆಂಬರ್ ೧೨, ೨೦೨೬
+                </p>
+
+                <p>
+                    <strong>📍 ಸ್ಥಳ:</strong>
+                    ಹೆನ್ನಿಂಗ್ಸನ್ ಲೋಟಸ್ ಪಾರ್ಕ್
+                    (Henningsen Lotus Park)
+                </p>
+
                 <a
                     href="https://share.google/DDM6rTCv6JxnZZCHI"
                     target="_blank"
                     rel="noopener noreferrer"
+                    class="event-location-link"
                 >
-                    View Location →
+                    📍 ಸ್ಥಳವನ್ನು ನಕ್ಷೆಯಲ್ಲಿ ನೋಡಿ →
                 </a>
-            </p>
 
-            <p>
+                <p>
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSeYsxc_OhrVawPpKsTWG7ReZtgfbxQCgub4YyQfU3q_2_w6uw/viewform"
+                        class="rsvp-btn event-rsvp-button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        ✅ ನಿಮ್ಮ ಆಗಮನವನ್ನು ಖಚಿತಪಡಿಸಿ — RSVP
+                    </a>
+                </p>
+            </section>
+
+            <section class="event-card">
+                <h2>🏞️ ಪ್ರಕೃತಿ ಮತ್ತು ಸತ್ಸಂಗದ ನುಡಿ</h2>
+
+                <div class="event-quote">
+                    <p>
+                        “ಇಳಿದು ಬಾ ತಾಯೆ ಇಳಿದು ಬಾ,
+                        ರಸದ ಹೊಳೆಯಾಗಿ ಪ್ರೀತಿಯ ಸೆಲೆಯಾಗಿ!”
+                    </p>
+
+                    <p>
+                        “ನದಿಯ ತೀರದಿ ಹಸಿರು ಹಂದರ,
+                        ನಲಿವ ಮಕ್ಕಳ ಕೇಕೆಯಾ,
+                    </p>
+
+                    <p>
+                        ಕಾಯ ಕಳೆತದ ಕಷ್ಟ ಮರೆಸುವ
+                        ಪ್ರಕೃತಿ ಸೌಂದರ್ಯರಾಶಿಯಾ!
+                    </p>
+
+                    <p>
+                        ಸತ್ಸಂಗವೇ ಜೀವನ್ಮುಕ್ತಿ...”
+                    </p>
+                </div>
+
+                <p>
+                    ಹೆನ್ನಿಂಗ್ಸನ್ ಲೋಟಸ್ ಪಾರ್ಕ್
+                    (South Fork American River) ನದಿ ತೀರದ
+                    ವಿಶಾಲವಾದ ೫೧ ಎಕರೆ ಪ್ರಕೃತಿಯ ಮಡಿಲಲ್ಲಿ ಕೂತು,
+                    ಬಂಧುಮಿತ್ರರೊಡನೆ ಸಜ್ಜನ್-ಸಂಗದಲ್ಲಿ ಕಾಲ ಕಳೆಯುವುದು
+                    ಪ್ರತಿಯೊಬ್ಬ ಕನ್ನಡಿಗನಿಗೆ ಒಂದು ಸವಿಯಾದ ಅನುಭವ.
+                </p>
+            </section>
+
+            <section class="event-card">
+                <h2>🍁 ಸಮ್ಮಿಲನದ ಗಮ್ಮತ್ತು</h2>
+
+                <p>
+                    ನಮ್ಮ ಫೋಲ್ಸಮ್ ಕನ್ನಡ ಕುಟುಂಬಗಳ ಈ ಸುಂದರ ಮಿಲನದಲ್ಲಿ
+                    ಊಟ, ಆಟ, ಹರಟೆ ಮತ್ತು ಪ್ರೀತಿಯ ಸವಿನೆನಪುಗಳು
+                    ನಿಮಗಾಗಿ ಕಾಯುತ್ತಿವೆ.
+                </p>
+            </section>
+
+            <section class="event-card">
+                <h2>🍳 ನೇರ ಅಡುಗೆ &amp; ದೇಸಿ ಆತಿಥ್ಯ</h2>
+
+                <p>
+                    ಕಣ್ಣೆದುರಲ್ಲೇ ಕಾವಲಿಯಿಂದ ಬಿಸಿಬಿಸಿಯಾಗಿ
+                    ಮೂಡಿಬರುವ ದೋಸೆಯ ಆತಿಥ್ಯ!
+                </p>
+
+                <ul>
+                    <li>
+                        🍽️ <strong>ಹಿರಿಯರಿಗೆ:</strong>
+                        ಘಮಘಮಿಸುವ ಮಸಾಲೆ ದೋಸೆ
+                    </li>
+
+                    <li>
+                        🧀 <strong>ಮಕ್ಕಳಿಗೆ:</strong>
+                        ಚೀಸ್ ದೋಸೆ
+                    </li>
+
+                    <li>
+                        🍨 <strong>ಸಿಹಿ ತಿನಿಸು:</strong>
+                        ಶಾವಿಗೆ ಪಾಯಸ
+                    </li>
+                </ul>
+            </section>
+
+            <section class="event-card">
+                <h2>☕ ಸಂಜೆಯ ಹೈ-ಟೀ — ಸಂಜೆ ೫:೦೦</h2>
+
+                <p>
+                    ಸಂಜೆ ತಂಪಾಗುತ್ತಿದ್ದಂತೆ ಎಲ್ಲರೂ ಒಂದಾಗಿ ಕೂತು
+                    ಸವಿಯಲು:
+                </p>
+
+                <ul>
+                    <li>☕ ಕಡಕ್ ಅಲ್ಲದ ಇಂಜಿ ಚಹಾ (Ginger Chai)</li>
+                    <li>🥣 ಚಟಪಟ ಕಾರದ ಬೆಳ್ ಪುರಿ</li>
+                </ul>
+            </section>
+
+            <section class="event-card">
+                <h2>🎯 ದಿನದ ಚಟುವಟಿಕೆಗಳು</h2>
+
+                <ul>
+                    <li>
+                        🍳 <strong>ಲೈವ್ ದೋಸೆ:</strong>
+                        ಬಿಸಿಬಿಸಿ ದೋಸೆಯ ಸವಿ
+                    </li>
+
+                    <li>
+                        👨‍👩‍👧 <strong>ಮಾತು-ಕಥೆ:</strong>
+                        ಕನ್ನಡಿಗರ ಕುಶಲಕ್ಷೇಮ-ಸಂಭಾಷಣೆ
+                    </li>
+
+                    <li>
+                        🎯 <strong>ಹೊರಾಂಗಣ ಆಟಗಳು:</strong>
+                        ಮೈಮನ ಸೆಳೆಯುವ ಆಟ-ಪಾಟ
+                    </li>
+
+                    <li>
+                        🧒 <strong>ಮಕ್ಕಳ ಧಮಾಕ:</strong>
+                        ಮಕ್ಕಳಿಗಾಗಿಯೇ ವಿಶೇಷ ಆಟಗಳು
+                    </li>
+
+                    <li>
+                        📸 <strong>ಗ್ರೂಪ್ ಫೋಟೋ:</strong>
+                        ನೆನಪಿನ ಬಂಡಾರಕ್ಕೆ ಸಾಂದರ್ಭಿಕ ಸಮೂಹ ಛಾಯಾಚಿತ್ರ
+                    </li>
+                </ul>
+            </section>
+
+            <section class="event-card">
+                <h2>⏰ ಕಾರ್ಯಕ್ರಮಗಳ ವೇಳಾಪಟ್ಟಿ</h2>
+
+                <ul>
+                    <li>೧೦:೦೦ AM – ಆಗಮನ &amp; ಆತ್ಮೀಯ ಸ್ವಾಗತ</li>
+                    <li>೧೧:೦೦ AM – ನೇರ ಅಡುಗೆ ಆರಂಭ</li>
+                    <li>೧೨:೩೦ PM – ಪ್ರೀತಿಯ ಭೋಜನ</li>
+                    <li>೦೨:೦೦ PM – ಆಟೋಟಗಳು &amp; ಮನರಂಜನೆ</li>
+                    <li>
+                        ೦೪:೦೦ PM – ಸಮೂಹ ಛಾಯಾಚಿತ್ರ
+                        (Group Photo)
+                    </li>
+                    <li>
+                        ೦೫:೦೦ PM – ಇಂಜಿ ಚಹಾ &amp; ಬೆಳ್ ಪುರಿ
+                    </li>
+                </ul>
+            </section>
+
+            <section class="event-card">
+                <h2>🙌 ನಮ್ಮ ಸ್ವಯಂಸೇವಕರು</h2>
+
+                <p>
+                    ಈ ದಿನವನ್ನು ಸುಂದರಗೊಳಿಸಲು ಶ್ರಮಿಸುತ್ತಿರುವ
+                    ನಮ್ಮ ಬಂಧುಗಳು:
+                </p>
+
+                <ul>
+                    <li>
+                        🎯 <strong>ಸಂತೋಷ್ ಭಟ್</strong> —
+                        ಮಕ್ಕಳ ಆಟೋಟಗಳು &amp; ಮನರಂಜನೆ
+                    </li>
+
+                    <li>
+                        🍳 <strong>ಸತೀಶ್ &amp; ಮಂಜು</strong> —
+                        ಅಡುಗೆಯ ಉಸ್ತುವಾರಿ
+                    </li>
+
+                    <li>
+                        📦 <strong>ರಘು</strong> —
+                        ಸಾಮಗ್ರಿಗಳ ನಿರ್ವಹಣೆ &amp; ಅರೇಂಜ್‌ಮೆಂಟ್ಸ್
+                    </li>
+
+                    <li>
+                        🧹 <strong>ವೇಣು</strong> —
+                        ಕಾರ್ಯಕ್ರಮದ ನಂತರದ ಸ್ವಚ್ಛತೆ &amp; ನಿರ್ವಹಣೆ
+                    </li>
+                </ul>
+
+                <p>
+                    <em>
+                        ಜವಾಬ್ದಾರಿಗಳಲ್ಲಿ ಬದಲಾವಣೆ ಬೇಕಿದ್ದಲ್ಲಿ
+                        ದಯವಿಟ್ಟು ತಿಳಿಸಿ.
+                    </em>
+                </p>
+
+                <p>
+                    🌸 <strong>ವಿಶೇಷ ಸೂಚನೆ:</strong>
+                    ಮನೆ-ಮನಗಳನ್ನು ಬೆಳಗುವ ಎಲ್ಲ ಮಹಿಳೆಯರಿಗೆ ಈ
+                    ವಾರಾಂತ್ಯ ಸಂಪೂರ್ಣ ವಿಶ್ರಾಂತಿ!
+                    ಯಾವುದೇ ಜವಾಬ್ದಾರಿಗಳಿರುವುದಿಲ್ಲ —
+                    ಬಂದು ಆನಂದಿಸಿ! 😊
+                </p>
+            </section>
+
+            <section class="event-card">
+                <h2>✅ RSVP — ನಿಮ್ಮ ಆಗಮನವನ್ನು ತಿಳಿಸಿ</h2>
+
+                <p>
+                    ಎಲ್ಲರಿಗೂ ತೃಪ್ತಿಕರವಾಗಿ ಅಡುಗೆ ಹಾಗೂ ಆಟಗಳನ್ನು
+                    ವ್ಯವಸ್ಥೆ ಮಾಡಲು ಅನುಕೂಲವಾಗುವಂತೆ,
+                    ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಗಮನವನ್ನು ಮುಂಚಿತವಾಗಿಯೇ
+                    ದೃಢೀಕರಿಸಿ.
+                </p>
+
                 <a
                     href="https://docs.google.com/forms/d/e/1FAIpQLSeYsxc_OhrVawPpKsTWG7ReZtgfbxQCgub4YyQfU3q_2_w6uw/viewform"
                     class="rsvp-btn"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    ✅ RSVP for the Fall Day Picnic
+                    ✅ RSVP ಮಾಡಿ →
                 </a>
-            </p>
-        </section>
 
-        <section class="event-card">
-            <h2>About the Event</h2>
+                <p>
+                    <strong>
+                        ಬನ್ನಿ, ಶರತ್ಕಾಲದ ಈ ಶನಿವಾರವನ್ನು
+                        ನದಿ ತೀರದ ಮಡಿಲಲ್ಲಿ ಪ್ರೀತಿಯಿಂದ ಆಚರಿಸೋಣ!
+                    </strong>
+                </p>
+            </section>
 
-            <p>
-                Join Namma Folsom families for our inaugural
-                Fall Day Picnic.
-            </p>
+        </div>
 
-            <p>
-                The picnic will feature live cooking, family
-                activities, outdoor games, and plenty of time
-                to meet and connect with other Kannada families
-                in the Folsom community.
-            </p>
-        </section>
 
-        <section class="event-card">
-            <h2>🍳 Live Cooking &amp; Food</h2>
+        <!-- ================================================= -->
+        <!-- ENGLISH VERSION -->
+        <!-- ================================================= -->
 
-            <p>
-                Fresh dosas will be prepared live at the picnic.
-            </p>
+        <div
+            id="englishContent"
+            class="language-section"
+            hidden
+        >
 
-            <ul>
-                <li>
-                    🍽️ <strong>Adults:</strong>
-                    Masala Dosa
-                </li>
+            <section class="event-card">
+                <h2>🍂 Namma Folsom Fall Day Picnic 2026</h2>
 
-                <li>
-                    🧀 <strong>Kids:</strong>
-                    Cheese Dosa
-                </li>
+                <p>Dear Friends,</p>
 
-                <li>
-                    🍨 <strong>Dessert:</strong>
-                    Shavige Payasa
-                </li>
-            </ul>
-        </section>
+                <p>
+                    Join Kannada families from Folsom and the
+                    surrounding communities for a beautiful fall
+                    day filled with nature, friendship, food,
+                    conversation, and community.
+                </p>
 
-        <section class="event-card">
-            <h2>☕ High Tea — 5:00 PM</h2>
+                <p>
+                    We warmly invite you to spend the day together
+                    along the American River, surrounded by nature,
+                    enjoying fresh dosas, chai, games, and good
+                    company.
+                </p>
 
-            <p>
-                We'll gather again at 5:00 PM for high tea
-                featuring:
-            </p>
+                <p>
+                    <strong>📅 Date:</strong>
+                    Saturday, September 12, 2026
+                </p>
 
-            <ul>
-                <li>☕ Kadak Ginger Chai</li>
-                <li>🥣 Bhel Puri</li>
-            </ul>
-        </section>
+                <p>
+                    <strong>📍 Venue:</strong>
+                    Henningsen Lotus Park
+                </p>
 
-        <section class="event-card">
-            <h2>Activities</h2>
+                <a
+                    href="https://share.google/DDM6rTCv6JxnZZCHI"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="event-location-link"
+                >
+                    📍 View Location →
+                </a>
 
-            <ul>
-                <li>🍳 Live Dosa Cooking</li>
-                <li>👨‍👩‍👧 Family Meet &amp; Greet</li>
-                <li>🎯 Outdoor Games</li>
-                <li>🧒 Kids Activities</li>
-                <li>📸 Community Group Photo</li>
-            </ul>
-        </section>
+                <p>
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSeYsxc_OhrVawPpKsTWG7ReZtgfbxQCgub4YyQfU3q_2_w6uw/viewform"
+                        class="rsvp-btn event-rsvp-button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        ✅ RSVP for the Fall Day Picnic
+                    </a>
+                </p>
+            </section>
 
-        <section class="event-card">
-            <h2>Event Schedule</h2>
+            <section class="event-card">
+                <h2>🏞️ A Day in Nature &amp; Community</h2>
 
-            <ul>
-                <li>10:00 AM – Arrivals &amp; Meet and Greet</li>
-                <li>11:00 AM – Live Cooking Begins</li>
-                <li>12:30 PM – Lunch</li>
-                <li>2:00 PM – Games &amp; Activities</li>
-                <li>4:00 PM – Community Group Photo</li>
-                <li>5:00 PM – High Tea: Kadak Ginger Chai &amp; Bhel Puri</li>
-            </ul>
-        </section>
+                <p>
+                    Henningsen Lotus Park sits along the
+                    South Fork of the American River and offers
+                    a beautiful natural setting for our families
+                    to relax, talk, laugh, and spend meaningful
+                    time together.
+                </p>
 
-        <section class="event-card">
-            <h2>🙌 Volunteer Team</h2>
+                <p>
+                    This gathering is about more than an event.
+                    It is a chance to strengthen friendships,
+                    celebrate our Kannada community, and enjoy
+                    a peaceful fall day together.
+                </p>
+            </section>
 
-            <p>
-                A big thank you to everyone helping make our
-                Fall Day Picnic special!
-            </p>
+            <section class="event-card">
+                <h2>🍁 What to Expect</h2>
 
-            <ul>
-                <li>
-                    🎯 <strong>Santosh Bhat</strong> —
-                    Kids Activities &amp; Games
-                </li>
+                <p>
+                    Food, games, conversation, laughter, and
+                    plenty of memories await at this gathering
+                    of Namma Folsom Kannada families.
+                </p>
+            </section>
 
-                <li>
-                    🍳 <strong>Sathish &amp; Manju</strong> —
-                    Cooking
-                </li>
+            <section class="event-card">
+                <h2>🍳 Live Cooking &amp; Desi Hospitality</h2>
 
-                <li>
-                    📦 <strong>Raghu</strong> —
-                    Supplies &amp; Table Arrangement
-                </li>
+                <p>
+                    Enjoy fresh dosas prepared live at the picnic.
+                </p>
 
-                <li>
-                    🧹 <strong>Venu</strong> —
-                    Wrap Up
-                </li>
-            </ul>
+                <ul>
+                    <li>
+                        🍽️ <strong>Adults:</strong>
+                        Masala Dosa
+                    </li>
 
-            <p>
-                <em>
-                    Let me know if you'd like to switch roles.
-                </em>
-            </p>
+                    <li>
+                        🧀 <strong>Kids:</strong>
+                        Cheese Dosa
+                    </li>
 
-            <p>
-                🌸 <strong>All ladies:</strong>
-                Enjoy the weekend — no assignments! 😊
-            </p>
-        </section>
+                    <li>
+                        🍨 <strong>Dessert:</strong>
+                        Shavige Payasa
+                    </li>
+                </ul>
+            </section>
 
-        <section class="event-card" id="rsvp">
-            <h2>✅ RSVP</h2>
+            <section class="event-card">
+                <h2>☕ High Tea — 5:00 PM</h2>
 
-            <p>
-                Planning to join us? Please RSVP so we can
-                prepare enough food and activities for everyone.
-            </p>
+                <p>
+                    As the evening cools down, we'll gather
+                    together for:
+                </p>
 
-            <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSeYsxc_OhrVawPpKsTWG7ReZtgfbxQCgub4YyQfU3q_2_w6uw/viewform"
-                class="rsvp-btn"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                RSVP Now →
-            </a>
-        </section>
+                <ul>
+                    <li>☕ Ginger Chai</li>
+                    <li>🥣 Bhel Puri</li>
+                </ul>
+            </section>
+
+            <section class="event-card">
+                <h2>🎯 Activities</h2>
+
+                <ul>
+                    <li>🍳 Live dosa cooking</li>
+                    <li>👨‍👩‍👧 Family meet &amp; greet</li>
+                    <li>🎯 Outdoor games</li>
+                    <li>🧒 Special activities for kids</li>
+                    <li>📸 Community group photo</li>
+                </ul>
+            </section>
+
+            <section class="event-card">
+                <h2>⏰ Event Schedule</h2>
+
+                <ul>
+                    <li>10:00 AM – Arrival &amp; Welcome</li>
+                    <li>11:00 AM – Live Cooking Begins</li>
+                    <li>12:30 PM – Lunch</li>
+                    <li>2:00 PM – Games &amp; Activities</li>
+                    <li>4:00 PM – Community Group Photo</li>
+                    <li>
+                        5:00 PM – Ginger Chai &amp; Bhel Puri
+                    </li>
+                </ul>
+            </section>
+
+            <section class="event-card">
+                <h2>🙌 Our Volunteers</h2>
+
+                <p>
+                    A big thank you to everyone helping make
+                    our Fall Day Picnic special!
+                </p>
+
+                <ul>
+                    <li>
+                        🎯 <strong>Santosh Bhat</strong> —
+                        Kids Activities &amp; Games
+                    </li>
+
+                    <li>
+                        🍳 <strong>Sathish &amp; Manju</strong> —
+                        Cooking
+                    </li>
+
+                    <li>
+                        📦 <strong>Raghu</strong> —
+                        Supplies &amp; Table Arrangement
+                    </li>
+
+                    <li>
+                        🧹 <strong>Venu</strong> —
+                        Wrap Up &amp; Cleanup
+                    </li>
+                </ul>
+
+                <p>
+                    <em>
+                        Please let us know if you would like
+                        to switch roles.
+                    </em>
+                </p>
+
+                <p>
+                    🌸 <strong>Special note:</strong>
+                    All the ladies get the weekend off —
+                    no assignments! Just come, relax,
+                    and enjoy the day. 😊
+                </p>
+            </section>
+
+            <section class="event-card">
+                <h2>✅ RSVP</h2>
+
+                <p>
+                    Please RSVP in advance so we can prepare
+                    enough food and activities for everyone.
+                </p>
+
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeYsxc_OhrVawPpKsTWG7ReZtgfbxQCgub4YyQfU3q_2_w6uw/viewform"
+                    class="rsvp-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    RSVP Now →
+                </a>
+
+                <p>
+                    <strong>
+                        Come celebrate this beautiful fall
+                        Saturday with us by the river!
+                    </strong>
+                </p>
+            </section>
+
+        </div>
 
     </main>
+
+    <script>
+        const kannadaContent =
+            document.getElementById("kannadaContent");
+
+        const englishContent =
+            document.getElementById("englishContent");
+
+        const kannadaButton =
+            document.getElementById("kannadaButton");
+
+        const englishButton =
+            document.getElementById("englishButton");
+
+        function showKannada() {
+            kannadaContent.hidden = false;
+            englishContent.hidden = true;
+
+            kannadaButton.classList.add("active");
+            englishButton.classList.remove("active");
+
+            document.documentElement.lang = "kn";
+
+            localStorage.setItem(
+                "nammaFolsomLanguage",
+                "kn"
+            );
+        }
+
+        function showEnglish() {
+            kannadaContent.hidden = true;
+            englishContent.hidden = false;
+
+            englishButton.classList.add("active");
+            kannadaButton.classList.remove("active");
+
+            document.documentElement.lang = "en";
+
+            localStorage.setItem(
+                "nammaFolsomLanguage",
+                "en"
+            );
+        }
+
+        const savedLanguage =
+            localStorage.getItem("nammaFolsomLanguage");
+
+        if (savedLanguage === "en") {
+            showEnglish();
+        } else {
+            showKannada();
+        }
+    </script>
 
 </body>
 </html>
